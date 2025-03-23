@@ -4,7 +4,8 @@ const cheerio = require('cheerio');
 const cors = require('cors');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+
 
 // Enable CORS to allow cross-origin requests
 app.use(cors());
